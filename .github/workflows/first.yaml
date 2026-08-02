@@ -15,10 +15,10 @@ jobs:
         run: echo "mentor by shaik"
       - name: print linux command
         run: pwd
-          whoami
-          date
-          du
-          free
+             whoami
+             date
+             du
+             free
         
     
     
