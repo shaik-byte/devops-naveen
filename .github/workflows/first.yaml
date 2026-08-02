@@ -1,0 +1,17 @@
+name: print firt pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  naveen:
+    runs-on: 	ubuntu-latest
+    steps:
+      - name: showing demo to naveen
+        run: echo "hello i am naveen"
+        
+    
+    
+
