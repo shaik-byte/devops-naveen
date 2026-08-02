@@ -14,11 +14,12 @@ jobs:
       - name: mentor by shaik
         run: echo "mentor by shaik"
       - name: print linux command
-        run: pwd
-             whoami
-             date
-             du
-             free
+        run: |
+          pwd
+          whoami
+          date
+          du
+          free
         
     
     
