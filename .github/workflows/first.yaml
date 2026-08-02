@@ -13,6 +13,13 @@ jobs:
         run: echo "hello i am naveen"
       - name: mentor by shaik
         run: echo "mentor by shaik"
+      - name: print linux command
+        run: |
+          pwd
+          whoami
+          date
+          du
+          free
         
     
     
