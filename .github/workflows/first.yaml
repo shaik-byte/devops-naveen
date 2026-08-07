@@ -7,7 +7,7 @@ on:
 
 jobs:
   naveen:
-    runs-on: 	ubuntu-latest
+    runs-on: naveen-self-hosted
     steps:
       - name: showing demo to naveen
         run: echo "hello i am naveen"
