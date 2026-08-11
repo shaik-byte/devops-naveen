@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - hot-fix/1.0
 
 jobs:
   build:
@@ -28,7 +29,7 @@ jobs:
       - name: testing the test job
         run: echo "Hi I am test step from test job"
       - name: test step 2
-        run: echo "iam second step
+        run: echo "iam second step"
 
   deploy:
     runs-on: ubuntu-latest
