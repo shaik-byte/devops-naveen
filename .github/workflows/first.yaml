@@ -25,9 +25,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: testing the test job
-        run: echo "Hi I am test step from test job
+        run: echo "Hi I am test step from test job"
       - name: test step 2
         run: echo "iam second step"
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploying
+        run: echo "deplying into  the target server/environment"
+      - name: status check
+        run: echo "checking the deployment"
     
 
         
