@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  naveen:
-    runs-on: naveen-self-hosted
+  build:
+    runs-on: ubuntu-latest
     steps:
       - name: showing demo to naveen
         run: echo "hello i am naveen"
@@ -20,6 +20,16 @@ jobs:
           date
           du
           free
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: testing the test job
+        run: echo "Hi I am test step from test job
+      - name: test step 2
+        run: echo "iam second step"
+    
+
         
     
     
