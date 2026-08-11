@@ -33,10 +33,10 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
     needs: test
     steps:
       - name: deploying
-        if: github.ref == 'refs/heads/main'
         run: echo "deplying into  the target server/environment"
       - name: status check
         run: echo "checking the deployment"
