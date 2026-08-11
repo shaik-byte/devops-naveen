@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: showing demo to naveen
-        continue-on-error: true
+        continue-on-error: false
         run: echo "hello i am naveen
       - name: mentor by shaik
         run: echo "mentor by shaik"
