@@ -1,9 +1,16 @@
-name: Print First Pipeline
+# name: Print First Pipeline
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+name: PR Check
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+     branches:
+       - main
 
 jobs:
   build:
