@@ -13,7 +13,7 @@ jobs:
         run: echo "This job runs only on the main branch"
 
   test:
-      runs-on: ubuntu-runner
+      runs-on: ubuntu-latest
       steps:
         - name: test
           run: echo "running the test"
