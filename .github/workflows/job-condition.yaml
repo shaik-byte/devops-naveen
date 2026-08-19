@@ -1,0 +1,19 @@
+name: Main Branch Job Condition
+
+on:
+  push:
+
+jobs:
+  build:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Build
+        run: echo "This job runs only on the main branch"
+
+  test:
+      runs-on: ubuntu-runner
+      steps:
+        - name: test
+          run: echo "running the test"
