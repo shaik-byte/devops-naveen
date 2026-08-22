@@ -13,4 +13,4 @@ jobs:
         run: echo "Running build for"
 
       - name: Build application
-        run: echo "Building the application..."
+        run: echo "Building the application..." 
