@@ -1,0 +1,16 @@
+name: Reusable Build Workflow
+
+on:
+  workflow_call:
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show environment
+        run: echo "Running build for"
+
+      - name: Build application
+        run: echo "Building the application..."
